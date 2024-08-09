@@ -81,8 +81,9 @@ export const createCheckout = async ({
     });
 
     return stripeSession.url;
-  } catch (e) {
+  } catch (e: any) {
     console.error(e);
+    // @ts-ignore
     return null;
   }
 };
