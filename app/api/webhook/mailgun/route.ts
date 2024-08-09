@@ -1,5 +1,5 @@
 import { NextResponse, NextRequest } from "next/server";
-import { sendEmail } from "@/libs/mailgun";
+import { sendEmail } from "@/lib/mailgun";
 import config from "@/config";
 
 // This route is used to receive emails from Mailgun and forward them to our customer support email.
@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json({});
-  } catch (e) {
+  } catch (e: any) {
     console.error(e?.message);
     return NextResponse.json({ error: e?.message }, { status: 500 });
   }
