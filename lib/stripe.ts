@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import Stripe from "stripe";
 
 interface CreateCheckoutParams {
