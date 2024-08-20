@@ -1,0 +1,230 @@
+[
+  {
+    "name": "Beeswax",
+    "category": "Wax Detail"
+  },
+  {
+    "name": "Bayberry Wax",
+    "category": "Wax Detail"
+  },
+  {
+    "name": "Candelilla Wax",
+    "category": "Wax Detail"
+  },
+  {
+    "name": "Organic Beeswax",
+    "category": "Wax Detail"
+  },
+  {
+    "name": "Olive Wax",
+    "category": "Wax Detail"
+  },
+  {
+    "name": "Soy Wax",
+    "category": "Wax Detail"
+  },
+  {
+    "name": "Golden Wax 444",
+    "category": "Wax Detail"
+  },
+  {
+    "name": "Golden Wax 454",
+    "category": "Wax Detail"
+  },
+  {
+    "name": "Cocoa Butter",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Cocoa Butter (deodorized)",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Cocoa Butter - Organic",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Shea Butter",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Shea Butter - Organic",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Shea Butter (refined)",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Coconut Oil",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Babassu Oil",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Lanolin",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Polybutene",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Mango Butter",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Carrier Liquid Oil",
+    "category": "Solid Carrier Oil Detail"
+  },
+  {
+    "name": "Castor Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Castor Oil - Organic",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Coconut MCT Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Coconut MCT Oil - Organic",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Cranberry Seed Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Date Seed Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Evening Primrose Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Glycerin",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Glycerin - Organic",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Grapeseed Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Grapeseed Oil - Organic",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Green Tea Seed Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Hazelnut Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Hempseed Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Hempseed Oil - Organic",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Jojoba Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Jojoba Oil - Clear",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Jojoba Oil - Golden Organic",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Lupine Seed Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Macadamia Nut Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Moringa Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Moringa Oil - Organic",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Neem Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Squalene",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Sunflower Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Sunflower Oil - Organic",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Sweet Almond Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Sweet Almond Oil - Organic",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Tamanu Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "Wheat Germ Oil",
+    "category": "Liquid Carrier Oil Detail"
+  },
+  {
+    "name": "BTMS-50",
+    "category": "Emulsifier Detail"
+  },
+  {
+    "name": "Cetyl Alcohol",
+    "category": "Emulsifier Detail"
+  },
+  {
+    "name": "GLYCERYL STEARATE & PEG-100 STEARATE EMULSIFYING WAX",
+    "category": "Emulsifier Detail"
+  },
+  {
+    "name": "Ritamulse SGC",
+    "category": "Emulsifier Detail"
+  },
+  {
+    "name": "Cetearyl Alcohol",
+    "category": "Emulsifier Detail"
+  },
+  {
+    "name": "Polysorbate 20",
+    "category": "Emulsifier Detail"
+  },
+  {
+    "name": "Xanthan Gum",
+    "category": "Emulsifier Detail"
+  }
+]

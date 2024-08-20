@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import User from "@/models/Product";
+import Product from "@/models/Product";
 
 const connectMongo = async () => {
   if (!process.env.MONGODB_URI) {
@@ -7,9 +7,12 @@ const connectMongo = async () => {
       "Add the MONGODB_URI environment variable inside .env.local to use mongoose"
     );
   }
-  return mongoose
-    .connect(process.env.MONGODB_URI)
-    .catch((e) => console.error("Mongoose Client Error: " + e.message));
+  try {
+    await mongoose.connect(process.env.MONGODB_URI);
+    console.log("MongoDB connected successfully");
+  } catch (e: any) {
+    console.error("Mongoose Client Error: " + e.message);
+  }
 };
 
 export default connectMongo;

@@ -1,0 +1,435 @@
+[
+  {
+    "SKU": "LB-BLA",
+    "name": "Bergamot & Lavender | Lip Balm",
+    "kind": "Lip Balm",
+    "customer": "J&L Naturals",
+    "NDA": false,
+    "UPC": "850037645176",
+    "hsCode": "330410",
+    "broadCode": "LB",
+    "scent": "Bergamot & Lavender",
+    "scentCode": "BLA",
+    "maxBatchSize": 1000,
+    "meltTemp": null,
+    "fillTemp": null,
+    "skinRegimen": "Calm",
+    "hairRegimen": "",
+    "containerType": "Kraft Tube",
+    "containerDimensions": "",
+    "containerSize": 0.3,
+    "productSize": 0.38,
+    "microbial": "",
+    "testing2": "",
+    "testing3": "",
+    "labels": [
+      {
+        "type": "White Rectangle Label",
+        "size": "1.625x3.0"
+      }
+    ],
+    "sealType": "",
+    "sealAmount": null,
+    "scoop": false,
+    "containmentBox": {
+      "color": "",
+      "size": ""
+    },
+    "tulipLinerSize": "",
+    "finalProductWeight": 0.6,
+    "shippingBox": {
+      "size": "20x16x4",
+      "quantity": 819
+    }
+  },
+  {
+    "SKU": "DOS-ORB",
+    "name": "Orange & Bergamot | Mineral Deodorant",
+    "kind": "Deodorant",
+    "customer": "J&L Naturals",
+    "NDA": false,
+    "UPC": "850037645657",
+    "hsCode": "330720",
+    "broadCode": "DOS",
+    "scent": "Orange & Bergamot",
+    "scentCode": "ORB",
+    "maxBatchSize": null,
+    "meltTemp": null,
+    "fillTemp": null,
+    "skinRegimen": "",
+    "hairRegimen": "",
+    "containerType": "Kraft Tube",
+    "containerDimensions": "",
+    "containerSize": 2.9,
+    "productSize": 3,
+    "microbial": "",
+    "testing2": "",
+    "testing3": "",
+    "labels": [
+      {
+        "type": "White Rectangle Label",
+        "size": "3.5x5.0"
+      }
+    ],
+    "sealType": "",
+    "sealAmount": null,
+    "scoop": false,
+    "containmentBox": {
+      "color": "",
+      "size": ""
+    },
+    "tulipLinerSize": "",
+    "finalProductWeight": 3.9,
+    "shippingBox": {
+      "size": "20x16x4",
+      "quantity": 133
+    }
+  },
+  {
+    "SKU": "HSG-PPR",
+    "name": "Growth | Hair Serum",
+    "kind": "Hair Serum",
+    "customer": "J&L Naturals",
+    "NDA": false,
+    "UPC": "850037645138",
+    "hsCode": "330590",
+    "broadCode": "HSG",
+    "scent": "Peppermint & Rosemary",
+    "scentCode": "PPR",
+    "maxBatchSize": null,
+    "meltTemp": null,
+    "fillTemp": null,
+    "skinRegimen": "",
+    "hairRegimen": "Growth",
+    "containerType": "Dropper - Frosted",
+    "containerDimensions": "",
+    "containerSize": 1,
+    "productSize": 1,
+    "microbial": "",
+    "testing2": "",
+    "testing3": "",
+    "labels": [
+      {
+        "type": "White Rectangle Label",
+        "size": "1.25x3.75"
+      }
+    ],
+    "sealType": "",
+    "sealAmount": null,
+    "scoop": false,
+    "containmentBox": {
+      "color": "",
+      "size": ""
+    },
+    "tulipLinerSize": "",
+    "finalProductWeight": 2.9,
+    "shippingBox": {
+      "size": "20x16x4",
+      "quantity": 154
+    }
+  },
+  {
+    "SKU": "CLB-HYD",
+    "name": "Hydrate | Cleansing Bar",
+    "kind": "Soap Bar",
+    "customer": "J&L Naturals",
+    "NDA": false,
+    "UPC": "850037645695",
+    "hsCode": "",
+    "broadCode": "CLB",
+    "scent": "",
+    "scentCode": "",
+    "maxBatchSize": null,
+    "meltTemp": null,
+    "fillTemp": null,
+    "skinRegimen": "Hydrate",
+    "hairRegimen": "",
+    "containerType": "",
+    "containerDimensions": "",
+    "containerSize": null,
+    "productSize": 3.3,
+    "microbial": "",
+    "testing2": "",
+    "testing3": "",
+    "labels": [
+      {
+        "type": "White Rectangle Label",
+        "size": "3.0x6.0"
+      }
+    ],
+    "sealType": "",
+    "sealAmount": null,
+    "scoop": false,
+    "containmentBox": {
+      "color": "Kraft Containment Box",
+      "size": "3.5x3.25x1.13"
+    },
+    "tulipLinerSize": "",
+    "finalProductWeight": 5.5,
+    "shippingBox": {
+      "size": "20x16x6",
+      "quantity": 145
+    }
+  },
+  {
+    "SKU": "SPB-STR",
+    "name": "Strength | Shampoo Bar",
+    "kind": "Shampoo",
+    "customer": "J&L Naturals",
+    "NDA": false,
+    "UPC": "850037645749",
+    "hsCode": "330590",
+    "broadCode": "SPB",
+    "scent": "",
+    "scentCode": "",
+    "maxBatchSize": null,
+    "meltTemp": null,
+    "fillTemp": null,
+    "skinRegimen": "",
+    "hairRegimen": "Strength",
+    "containerType": "",
+    "containerDimensions": "",
+    "containerSize": null,
+    "productSize": 3.5,
+    "microbial": "",
+    "testing2": "",
+    "testing3": "",
+    "labels": [
+      {
+        "type": "White Rectangle Label",
+        "size": "3.0x6.0"
+      }
+    ],
+    "sealType": "",
+    "sealAmount": null,
+    "scoop": false,
+    "containmentBox": {
+      "color": "Kraft Containment Box",
+      "size": "3.5x3.25x1.13"
+    },
+    "tulipLinerSize": "",
+    "finalProductWeight": 3.5,
+    "shippingBox": {
+      "size": "20x16x4",
+      "quantity": 100
+    }
+  },
+  {
+    "SKU": "FS-TIM",
+    "name": "Timeless | Face Salve",
+    "kind": "Salve",
+    "customer": "J&L Naturals",
+    "NDA": false,
+    "UPC": "850037645190",
+    "hsCode": "330499",
+    "broadCode": "FS",
+    "scent": "",
+    "scentCode": "",
+    "maxBatchSize": 350,
+    "meltTemp": null,
+    "fillTemp": null,
+    "skinRegimen": "Timeless",
+    "hairRegimen": "",
+    "containerType": "Kraft Jar",
+    "containerDimensions": "",
+    "containerSize": 1.5,
+    "productSize": 1.5,
+    "microbial": "",
+    "testing2": "",
+    "testing3": "",
+    "labels": [
+      {
+        "type": "White Rectangle Label",
+        "size": "1.375x6.875"
+      }
+    ],
+    "sealType": "",
+    "sealAmount": null,
+    "scoop": false,
+    "containmentBox": {
+      "color": "",
+      "size": ""
+    },
+    "tulipLinerSize": "",
+    "finalProductWeight": 1.9,
+    "shippingBox": {
+      "size": "20x16x6",
+      "quantity": 210
+    }
+  },
+  {
+    "SKU": "FMM-SHI",
+    "name": "Shine | Face Mask",
+    "kind": "Mask",
+    "customer": "J&L Naturals",
+    "NDA": false,
+    "UPC": "850037645022",
+    "hsCode": "330491",
+    "broadCode": "FMM",
+    "scent": "",
+    "scentCode": "",
+    "maxBatchSize": null,
+    "meltTemp": null,
+    "fillTemp": null,
+    "skinRegimen": "Shine",
+    "hairRegimen": "",
+    "containerType": "Kraft Container",
+    "containerDimensions": "",
+    "containerSize": 8,
+    "productSize": 4,
+    "microbial": "",
+    "testing2": "",
+    "testing3": "",
+    "labels": [
+      {
+        "type": "White Rectangle Label",
+        "size": "1.75x3.5"
+      },
+      {
+        "type": "White Circle Label",
+        "size": "3"
+      }
+    ],
+    "sealType": "",
+    "sealAmount": null,
+    "scoop": true,
+    "containmentBox": {
+      "color": "Kraft Containment Box",
+      "size": "4x4x3"
+    },
+    "tulipLinerSize": "",
+    "finalProductWeight": 4.9,
+    "shippingBox": {
+      "size": "20x16x9",
+      "quantity": 48
+    }
+  },
+  {
+    "SKU": "SSM-LAV",
+    "name": "Lavender | Salt Scrub",
+    "kind": "Scrub",
+    "customer": "J&L Naturals",
+    "NDA": false,
+    "UPC": "850037645015",
+    "hsCode": "330730",
+    "broadCode": "SSM",
+    "scent": "Lavender",
+    "scentCode": "LAV",
+    "maxBatchSize": null,
+    "meltTemp": null,
+    "fillTemp": null,
+    "skinRegimen": "",
+    "hairRegimen": "",
+    "containerType": "Kraft Container",
+    "containerDimensions": "",
+    "containerSize": 8,
+    "productSize": 8,
+    "microbial": "",
+    "testing2": "",
+    "testing3": "",
+    "labels": [
+      {
+        "type": "White Rectangle Label",
+        "size": "1.75x3.5"
+      },
+      {
+        "type": "White Circle Label",
+        "size": "3"
+      }
+    ],
+    "sealType": "",
+    "sealAmount": null,
+    "scoop": true,
+    "containmentBox": {
+      "color": "Kraft Containment Box",
+      "size": "4x4x3"
+    },
+    "tulipLinerSize": "8.9x8.9",
+    "finalProductWeight": 8.9,
+    "shippingBox": {
+      "size": "20x16x9",
+      "quantity": 48
+    }
+  },
+  {
+    "SKU": "LBT-WBB",
+    "name": "Wild Berry Bliss | Tinted Lip Balm",
+    "kind": "Lip Balm",
+    "customer": "J&L Naturals",
+    "NDA": false,
+    "UPC": "",
+    "hsCode": "",
+    "broadCode": "LBT",
+    "scent": "Wild Berry Bliss",
+    "scentCode": "WBB",
+    "maxBatchSize": 1000,
+    "meltTemp": null,
+    "fillTemp": null,
+    "skinRegimen": "",
+    "hairRegimen": "",
+    "containerType": "Kraft Tube",
+    "containerDimensions": "",
+    "containerSize": 0.3,
+    "productSize": 0.3,
+    "microbial": "",
+    "testing2": "",
+    "testing3": "",
+    "labels": [
+      {
+        "type": "White Rectangle Label",
+        "size": "1.625x3.0"
+      }
+    ],
+    "sealType": "",
+    "sealAmount": null,
+    "scoop": false,
+    "containmentBox": {
+      "color": "",
+      "size": ""
+    },
+    "tulipLinerSize": "",
+    "finalProductWeight": 0.6,
+    "shippingBox": {
+      "size": "20x16x4",
+      "quantity": 819
+    }
+  },
+  {
+    "SKU": "OF-DSC-EUL",
+    "name": "Eucalyptus Lemon | Dish Soap | Oliver Flynn",
+    "kind": "Soap Cube",
+    "customer": "Oliver Flynn",
+    "NDA": true,
+    "UPC": "",
+    "hsCode": "",
+    "broadCode": "DSC",
+    "scent": "Eucalyptus Lemon",
+    "scentCode": "EUL",
+    "maxBatchSize": 64,
+    "meltTemp": null,
+    "fillTemp": null,
+    "skinRegimen": "",
+    "hairRegimen": "",
+    "containerType": "",
+    "containerDimensions": "",
+    "containerSize": null,
+    "productSize": 7.4,
+    "microbial": "",
+    "testing2": "",
+    "testing3": "",
+    "labels": [],
+    "sealType": "Kraft Tape",
+    "sealAmount": 10,
+    "scoop": false,
+    "containmentBox": {
+      "color": "",
+      "size": ""
+    },
+    "tulipLinerSize": "",
+    "finalProductWeight": 7.4,
+    "shippingBox": {
+      "size": "",
+      "quantity": null
+    }
+  }
+]

@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import toJSON from "./plugins/toJSON";
+const mongoose = require("mongoose");
+const toJSON = require("./toJSON.js");
 
 const inventorySchema = new mongoose.Schema(
   {
@@ -30,5 +30,5 @@ const inventorySchema = new mongoose.Schema(
 // add plugin that converts mongoose to json
 inventorySchema.plugin(toJSON);
 
-export default mongoose.models.Inventory ||
-  mongoose.model("Inventory", inventorySchema);
+module.exports =
+  mongoose.models.Inventory || mongoose.model("Inventory", inventorySchema);

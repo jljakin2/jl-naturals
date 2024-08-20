@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -62,13 +60,16 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Nav from "../components/navigation";
-import { useRouter } from "next/navigation";
+import apiClient from "@/lib/api";
+import connectMongo from "@/lib/mongoose";
+import Product from "@/models/Product";
+import { columns } from "./columns";
+import { DataTable } from "../components/main-table/data-table";
 
-export default function ProductsPage() {
-  const router = useRouter();
-  function handleNav(id: string) {
-    router.push("/products/" + id);
-  }
+export default async function ProductsPage() {
+  await connectMongo();
+  const products = await Product.find().lean();
+
   return (
     <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
       <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
@@ -234,7 +235,10 @@ export default function ProductsPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Table>
+                <div className="flex h-full flex-1 flex-col space-y-8">
+                  <DataTable data={products} columns={columns} />
+                </div>
+                {/* <Table>
                   <TableHeader>
                     <TableRow>
                       <TableHead className="hidden w-[100px] sm:table-cell">
@@ -255,7 +259,7 @@ export default function ProductsPage() {
                     </TableRow>
                   </TableHeader>
                   <TableBody className="cursor-pointer">
-                    <TableRow onClick={() => handleNav("1")}>
+                    <TableRow>
                       <TableCell className="hidden sm:table-cell">
                         <Image
                           alt="Product image"
@@ -504,7 +508,7 @@ export default function ProductsPage() {
                       </TableCell>
                     </TableRow>
                   </TableBody>
-                </Table>
+                </Table> */}
               </CardContent>
               <CardFooter>
                 <div className="text-xs text-muted-foreground">
