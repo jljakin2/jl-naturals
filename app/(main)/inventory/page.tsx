@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -63,12 +61,15 @@ import {
 } from "@/components/ui/tooltip";
 import Nav from "../components/navigation";
 import { useRouter } from "next/navigation";
+import { DataTable } from "../components/main-table/data-table";
+import connectMongo from "@/lib/mongoose";
+import Inventory from "@/models/Inventory";
+import { columns } from "./columns";
 
-export default function ProductsPage() {
-  const router = useRouter();
-  function handleNav(id: string) {
-    router.push("/inventory/" + id);
-  }
+export default async function InventoryPage() {
+  await connectMongo();
+  const inventory = await Inventory.find().lean();
+
   return (
     <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
       <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
@@ -232,7 +233,10 @@ export default function ProductsPage() {
                 <CardDescription>Manage your inventory here.</CardDescription>
               </CardHeader>
               <CardContent>
-                <Table>
+                <div className="flex h-full flex-1 flex-col space-y-8">
+                  <DataTable data={inventory} columns={columns} />
+                </div>
+                {/* <Table>
                   <TableHeader>
                     <TableRow>
                       <TableHead className="hidden w-[100px] sm:table-cell">
@@ -502,13 +506,13 @@ export default function ProductsPage() {
                       </TableCell>
                     </TableRow>
                   </TableBody>
-                </Table>
+                </Table> */}
               </CardContent>
-              <CardFooter>
+              {/* <CardFooter>
                 <div className="text-xs text-muted-foreground">
                   Showing <strong>1-10</strong> of <strong>32</strong> products
                 </div>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </TabsContent>
         </Tabs>

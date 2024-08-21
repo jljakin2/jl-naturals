@@ -67,8 +67,18 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Nav from "../../components/navigation";
+import connectMongo from "@/lib/mongoose";
+import Inventory from "@/models/Inventory";
 
-export default function SingleProductPage() {
+export default async function SingleProductPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const id = params.id;
+  await connectMongo();
+  const item: any = await Inventory.findOne({ _id: id }).lean();
+
   return (
     <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
       <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
@@ -183,16 +193,18 @@ export default function SingleProductPage() {
       <main className="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8">
         <div className="mx-auto grid max-w-[59rem] flex-1 auto-rows-max gap-4">
           <div className="flex items-center gap-4">
-            <Button variant="outline" size="icon" className="h-7 w-7">
-              <ChevronLeft className="h-4 w-4" />
-              <span className="sr-only">Back</span>
-            </Button>
+            <Link href="/inventory">
+              <Button variant="outline" size="icon" className="h-7 w-7">
+                <ChevronLeft className="h-4 w-4" />
+                <span className="sr-only">Back</span>
+              </Button>
+            </Link>
             <h1 className="flex-1 shrink-0 whitespace-nowrap text-xl font-semibold tracking-tight sm:grow-0">
-              Pro Controller
+              {item.name}
             </h1>
-            <Badge variant="outline" className="ml-auto sm:ml-0">
+            {/* <Badge variant="outline" className="ml-auto sm:ml-0">
               In stock
-            </Badge>
+            </Badge> */}
             <div className="hidden items-center gap-2 md:ml-auto md:flex">
               <Button variant="outline" size="sm">
                 Discard
@@ -217,7 +229,7 @@ export default function SingleProductPage() {
                         id="name"
                         type="text"
                         className="w-full"
-                        defaultValue="Gamer Gear Pro Controller"
+                        defaultValue={item.name}
                       />
                     </div>
                     <div className="grid gap-3">

@@ -57,10 +57,21 @@ export const columns: ColumnDef<any>[] = [
           />
 
           {/* File or folder name */}
-          <p className="max-w-[150px] md:max-w-[400px] lg:max-w-[500px] truncate">
-            {row.getValue("name")}
-          </p>
+          <p className="">{row.getValue("name")}</p>
         </div>
+      </div>
+    ),
+    enableHiding: false,
+  },
+  {
+    accessorKey: "category",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Category" />
+    ),
+    sortingFn: "text",
+    cell: ({ row }) => (
+      <div className="flex space-x-2 select-none">
+        <p className="">{row.getValue("category")}</p>
       </div>
     ),
     enableHiding: false,
@@ -74,7 +85,7 @@ export const columns: ColumnDef<any>[] = [
   //   ),
   //   cell: ({ row }) => {
   //     return (
-  //       <div className="flex items-center text-muted-foreground select-none">
+  //       <div className="flex items-center text-muted-foreground cursor-default select-none">
   //         <span>{row.getValue("price")}</span>
   //       </div>
   //     );
@@ -150,7 +161,7 @@ export const columns: ColumnDef<any>[] = [
   //     const formattedDate = format(parseISO(dateString), "MMM dd, yyyy"); // the MMM dd, yyyy format is the short date format
 
   //     return (
-  //       <div className="flex items-center text-muted-foreground select-none">
+  //       <div className="flex items-center text-muted-foreground cursor-default select-none">
   //         <span>{formattedDate}</span>
   //       </div>
   //     );

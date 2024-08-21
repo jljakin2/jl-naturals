@@ -14,7 +14,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 import {
@@ -109,43 +109,15 @@ export function DataTable<TData, TValue>({
   // }, [handleClickOutside, table]);
 
   const router = useRouter();
+  const path = usePathname();
 
-  const handleClick = (item, cellId, event, row) => {
-    if (cellId === "actions" || cellId === "select") return; // we don't want these cells to trigger anything because they have their own actions
+  const handleClick = (item: any, cellId: any) => {
+    if (cellId === "actions") return; // we don't want these cells to trigger anything because they have their own actions
 
-    let clickTimeout;
-
-    if (event.detail === 1) {
-      // Single click detected
-      clickTimeout = setTimeout(() => {
-        // toggle the selection state for the row
-        row.toggleSelected();
-      }, 200); // Adjust the timeout duration as needed
-    }
-
-    if (event.detail === 2) {
-      // Double click detected
-      clearTimeout(clickTimeout);
-
-      if (item.isTrashed) return; // don't navigate to trashed items
-
-      // if the file is still processing, show the user a dialog telling them to wait until the processing completes
-      if (item.kind === "file" && item?.processing?.status === 0) {
-        setShowProcessingDialog(true);
-        return;
-      }
-
-      // if the file failed to process, show the user a dialog telling them what happened
-      if (item.kind === "file" && item?.processing?.status === 2) {
-        setShowFailedConversionDialog(true);
-        return;
-      }
-
-      if (item.kind === "file") {
-        router.push(`/file/${item._id}`);
-      } else {
-        router.push(`/files/folder/${item._id}`);
-      }
+    if (path.startsWith("/products")) {
+      router.push(`/products/${item._id}`);
+    } else if (path.startsWith("/inventory")) {
+      router.push(`/inventory/${item._id}`);
     }
   };
 
@@ -184,6 +156,7 @@ export function DataTable<TData, TValue>({
                   <TableRow
                     key={row.id}
                     data-state={row.getIsSelected() && "selected"}
+                    className="!cursor-pointer"
                   >
                     {row.getVisibleCells().map((cell) => {
                       return (
@@ -191,13 +164,8 @@ export function DataTable<TData, TValue>({
                           key={cell.id}
                           // @ts-ignore
                           className={cn(cell.column.columnDef.meta?.className)}
-                          onClick={(event) =>
-                            handleClick(
-                              row.original,
-                              cell.column.id,
-                              event,
-                              row
-                            )
+                          onClick={() =>
+                            handleClick(row.original, cell.column.id)
                           }
                         >
                           {flexRender(
