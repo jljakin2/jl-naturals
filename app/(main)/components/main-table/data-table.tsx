@@ -47,10 +47,6 @@ export function DataTable<TData, TValue>({
   context,
 }: DataTableProps<TData, TValue>) {
   const [rowSelection, setRowSelection] = React.useState({});
-  const [columnVisibility, setColumnVisibility] =
-    React.useState<VisibilityState>(
-      JSON.parse(window.localStorage.getItem("columnVisibility") || "{}")
-    );
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
   );
@@ -68,20 +64,12 @@ export function DataTable<TData, TValue>({
     }
   }, [openDialog]);
 
-  useEffect(() => {
-    window.localStorage.setItem(
-      "columnVisibility",
-      JSON.stringify(columnVisibility)
-    );
-  }, [columnVisibility]);
-
   const table = useReactTable({
     meta: {}, // FIXME: use this to store any meta data you need throughout the table. Acts like a context or redux store within the table.
     data,
     columns,
     state: {
       sorting,
-      columnVisibility,
       rowSelection,
       columnFilters,
     },
@@ -89,7 +77,6 @@ export function DataTable<TData, TValue>({
     onRowSelectionChange: setRowSelection,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
-    onColumnVisibilityChange: setColumnVisibility,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getSortedRowModel: getSortedRowModel(),
