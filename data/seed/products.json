@@ -2,6 +2,7 @@
   {
     "SKU": "LB-BLA",
     "name": "Bergamot & Lavender | Lip Balm",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl nec ultricies ultricies, nunc nisl ultricies nunc, nec ultricies nunc nisl nec nunc.",
     "kind": "Lip Balm",
     "customer": "J&L Naturals",
     "NDA": false,
@@ -45,6 +46,7 @@
   {
     "SKU": "DOS-ORB",
     "name": "Orange & Bergamot | Mineral Deodorant",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl nec ultricies ultricies, nunc nisl ultricies nunc, nec ultricies nunc nisl nec nunc.",
     "kind": "Deodorant",
     "customer": "J&L Naturals",
     "NDA": false,
@@ -131,6 +133,7 @@
   {
     "SKU": "CLB-HYD",
     "name": "Hydrate | Cleansing Bar",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl nec ultricies ultricies, nunc nisl ultricies nunc, nec ultricies nunc nisl nec nunc.",
     "kind": "Soap Bar",
     "customer": "J&L Naturals",
     "NDA": false,
@@ -217,6 +220,7 @@
   {
     "SKU": "FS-TIM",
     "name": "Timeless | Face Salve",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl nec ultricies ultricies, nunc nisl ultricies nunc, nec ultricies nunc nisl nec nunc.",
     "kind": "Salve",
     "customer": "J&L Naturals",
     "NDA": false,
@@ -307,6 +311,7 @@
   {
     "SKU": "SSM-LAV",
     "name": "Lavender | Salt Scrub",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl nec ultricies ultricies, nunc nisl ultricies nunc, nec ultricies nunc nisl nec nunc.",
     "kind": "Scrub",
     "customer": "J&L Naturals",
     "NDA": false,
@@ -354,6 +359,7 @@
   {
     "SKU": "LBT-WBB",
     "name": "Wild Berry Bliss | Tinted Lip Balm",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl nec ultricies ultricies, nunc nisl ultricies nunc, nec ultricies nunc nisl nec nunc.",
     "kind": "Lip Balm",
     "customer": "J&L Naturals",
     "NDA": false,
@@ -397,6 +403,7 @@
   {
     "SKU": "OF-DSC-EUL",
     "name": "Eucalyptus Lemon | Dish Soap | Oliver Flynn",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl nec ultricies ultricies, nunc nisl ultricies nunc, nec ultricies nunc nisl nec nunc.",
     "kind": "Soap Cube",
     "customer": "Oliver Flynn",
     "NDA": true,
