@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { DataTableViewOptions } from "./data-table-view-options";
 // import { types } from "../../data-config";
 import { DataTableFacetedFilter } from "./data-table-faceted-filter";
 // import { DataTableSizeFilter } from "./data-table-size-filter";
@@ -76,7 +75,6 @@ export function DataTableToolbar<TData>({
           )}
         </div>
       </div>
-      {needsViewToggle && <DataTableViewOptions table={table} />}
     </div>
   );
 }
